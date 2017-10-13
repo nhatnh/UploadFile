@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+	<record checkSum="900ddd4cb937ad28cc7ad82aaab73d14">
+		<title>Spider Man</title>
+		<description>An Amazing Super Hero Movie</description>
+		<mainActor>Tobey, Mary</mainActor>
+		<producer>ABC Picture</producer>
+		<director>Sam Raimi</director>
+	</record>
+	<record checkSum="ae26d0f2648354ccc273f5902d1d073c">
+		<title>Turtle Ninja</title>
+		<description>An Interesting Action Film</description>
+		<mainActor>Megan, Will</mainActor>
+		<producer>DEF Picture</producer>
+		<director>Jonathan Liebesman</director>
+	</record>
+	<record checkSum="13d0583476e63446a60862887f6f2939">
+		<title>The X-Men</title>
+		<description>Men is a 2000 American superhero film</description>
+		<mainActor>Logan</mainActor>
+		<producer>Marvel Studios</producer>
+		<director>Bryan Singer</director>
+	</record>
+</movies>
