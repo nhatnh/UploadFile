@@ -1,6 +1,8 @@
 package com.movie.model;
 
-public class MovieRecord {
+import java.io.Serializable;
+
+public class MovieRecord implements Serializable {
 
 	private Long id;
 	private String checkSum;
