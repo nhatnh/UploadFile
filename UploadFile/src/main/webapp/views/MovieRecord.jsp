@@ -129,9 +129,9 @@
 					<tfoot>
 						<td colspan="6">
 	                        <div class="pagination">
-	                            <button	ng-disabled="myCtrl.currentPage == 0" ng-click="myCtrl.currentPage=myCtrl.currentPage-1">« Prev</button>
+	                            <button	ng-disabled="myCtrl.currentPage == 0" ng-click="myCtrl.currentPage=myCtrl.currentPage-1">ï¿½ Prev</button>
 	                            {{myCtrl.currentPage+1}}/{{myCtrl.numberOfPages()}}
-	                            <button ng-disabled="myCtrl.currentPage >= myCtrl.records.length/myCtrl.pageSize - 1" ng-click="myCtrl.currentPage=myCtrl.currentPage+1">Next »</button>
+	                            <button ng-disabled="myCtrl.currentPage >= myCtrl.records.length/myCtrl.pageSize - 1" ng-click="myCtrl.currentPage=myCtrl.currentPage+1">Next ï¿½</button>
 	                        </div>
 	                    </td>
 					</tfoot>

@@ -1,7 +1,6 @@
 'use strict';
 
-App.controller('uploadCtrl', [ '$scope', 'fileUpload',
-	function($scope, fileUpload) {
+App.controller('uploadCtrl', [ '$scope', 'fileUpload', function($scope, fileUpload) {
 		var self = this;
 		var myFile = null;
 		self.record={id:null,title:'',director:'',producer:'',mainActor:'',desc:'',checkSum:''};

@@ -23,8 +23,7 @@ App.service('fileUpload', ['$http', function ($http, $q) {
 	};
 
 	this.fetchAllMovieRecords = function() {
-		return $http.get(baseUrl + 'record/')
-		.then(
+		return $http.get(baseUrl + 'record/').then(
 			function(response){
 				return response.data;
 			},
@@ -36,8 +35,7 @@ App.service('fileUpload', ['$http', function ($http, $q) {
 	};
 
 	this.createMovieRecord = function(record){
-	return $http.post(baseUrl + 'record/', record)
-	.then(
+	return $http.post(baseUrl + 'record/', record).then(
 		function(response){
 			return response;
 		},
