@@ -1,6 +1,6 @@
 # UploadFile
 
-Movie Record Simple Web App
+Movie Record Simple - A Maven Web App Project
 
 Frontend: AngularJS, Bootstrap, HTML-JSP, CSS, JS
 Backend: Java, Spring MVC Rest API, Maven, Tomcat
