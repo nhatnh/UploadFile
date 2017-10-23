@@ -52,6 +52,7 @@ public class ActionUtil {
 	 */
 	public static List<MovieRecord> processUploadedXMLFile(String path) {
 		File fXmlFile = new File(path);
+		List<MovieRecord> records = new ArrayList<MovieRecord>();
 		try {
 			if (fXmlFile == null || !fXmlFile.isFile()
 					|| "XML".equalsIgnoreCase(URLConnection.guessContentTypeFromName(fXmlFile.getName()))) {
@@ -64,9 +65,7 @@ public class ActionUtil {
 			Document doc = dBuilder.parse(fXmlFile);
 			doc.getDocumentElement().normalize();
 
-			List<MovieRecord> records = new ArrayList<MovieRecord>();
 			NodeList nList = doc.getElementsByTagName("record");
-
 			for (int i = 0; i < nList.getLength(); i++) {
 				Node nNode = nList.item(i);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -92,12 +91,13 @@ public class ActionUtil {
 			                .build());
 				}
 			}
-			fXmlFile.delete();
-			return records;
 		} catch (Exception e) {
-			//System.out.println("Deleted File: " + fXmlFile.getName());
-			fXmlFile.delete();
-			return null;
+			e.printStackTrace();
+		} finally {
+			if(fXmlFile.exists()) {
+				fXmlFile.delete();	
+			}
+			return records;
 		}
 	}
 
